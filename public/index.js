@@ -33,11 +33,11 @@ function getQuestion() {
     function (data) {
       if (data) {
         currentQuestionAnswer = data.answer;
+        answer.text("Click to reveal answer.");
         if (nextButton.is(":hidden")) {
           nextButton.show();
         }
         if (answer.is(":hidden")) {
-          answer.text("Click to reveal answer.");
           answer.show();
         }
         question.text(data.question);
