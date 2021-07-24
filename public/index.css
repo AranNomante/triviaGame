@@ -1,0 +1,16 @@
+#mainLogo {
+  height: 25vh;
+}
+#linkedin {
+  height: 5vh;
+}
+.catBtn {
+  border: none;
+  border-bottom: 1vw solid black;
+}
+.selectedCat {
+  background-color: greenyellow !important;
+}
+#container2 {
+  display: none;
+}
