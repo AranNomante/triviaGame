@@ -33,16 +33,16 @@ function getQuestion() {
     function (data) {
       if (data) {
         currentQuestionAnswer = data.answer;
-        answer.text("Click to reveal answer.");
+        answer.html("Click to reveal answer.");
         if (nextButton.is(":hidden")) {
           nextButton.show();
         }
         if (answer.is(":hidden")) {
           answer.show();
         }
-        question.text(data.question);
+        question.html(data.question);
       } else {
-        question.text("There are no more questions in this category!");
+        question.html("There are no more questions in this category!");
         nextButton.hide();
         answer.hide();
       }
@@ -75,5 +75,5 @@ nextButton.click(function () {
   getQuestion();
 });
 answer.click(function () {
-  answer.text(currentQuestionAnswer);
+  answer.html(currentQuestionAnswer);
 });
